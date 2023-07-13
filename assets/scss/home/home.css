@@ -1,1 +1,99 @@
-/*# sourceMappingURL=home.css.map */
+#head-up {
+  height: 55px;
+}
+#head-up .email {
+  width: 170px;
+  justify-content: space-between;
+  display: inline-flex;
+  height: 55px;
+  align-items: center;
+}
+#head-up .email p {
+  margin: 0;
+}
+#head-up .email i {
+  height: 14px;
+}
+#head-up .phone {
+  justify-content: space-between;
+  width: 153px;
+  display: inline-flex;
+  height: 55px;
+  align-items: center;
+}
+#head-up .phone p {
+  margin: 0;
+}
+#head-up .phone i {
+  height: 14px;
+}
+#head-up .social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 140px;
+}
+#head-up .social a {
+  text-decoration: none;
+  color: black;
+}
+#head-up .language {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#head-up .language span {
+  font-size: 14px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+#head-up .language img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+#head-up .login {
+  display: inline-flex;
+  height: 55px;
+  align-items: center;
+}
+#head-up .login a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60px;
+}
+#head-up .login a i {
+  height: 14px;
+  transition: all 0.3s;
+}
+#head-up .login a p {
+  margin: 0;
+  transition: all 0.3s;
+}
+#head-up .login a:hover i, #head-up .login a:hover p {
+  color: rgb(231, 171, 60);
+}
+#head-up .vertical-line {
+  height: 55px;
+  width: 0.5px;
+  background-color: black;
+  opacity: 0.25;
+}
+#head-up hr {
+  margin: 0;
+}
+#head-up i {
+  transition: all 0.3s;
+}
+#head-up i:hover {
+  color: rgb(231, 171, 60);
+}
+
+#head-down {
+  height: 130px;
+}/*# sourceMappingURL=home.css.map */
