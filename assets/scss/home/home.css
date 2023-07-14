@@ -96,4 +96,84 @@
 
 #head-down {
   height: 130px;
+}
+#head-down .nav-logo {
+  height: 130px;
+  display: flex;
+  align-items: center;
+}
+#head-down .nav-logo img {
+  width: 100%;
+}
+#head-down .search {
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#head-down .search form {
+  position: relative;
+  width: 100%;
+  height: 50px;
+}
+#head-down .search form input {
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 10px;
+  position: absolute;
+  padding-right: 60px;
+}
+#head-down .search form button {
+  height: 50px;
+  width: 50px;
+  border: 0;
+  background-color: rgb(231, 171, 60);
+  color: white;
+  position: absolute;
+  right: 0;
+}
+#head-down .icons {
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#head-down .icons .wishlist,
+#head-down .icons .basket {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#head-down .icons .wishlist a,
+#head-down .icons .basket a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+#head-down .icons .wishlist a i,
+#head-down .icons .basket a i {
+  font-size: 25px;
+  position: absolute;
+}
+#head-down .icons .wishlist a span,
+#head-down .icons .basket a span {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background-color: orange;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: white;
 }/*# sourceMappingURL=home.css.map */
