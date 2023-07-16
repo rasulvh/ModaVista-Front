@@ -68,14 +68,14 @@
         <section id="head-down">
             <div class="container">
                 <div class="row">
-                    <div class="col-2">
+                    <div class="col-lg-2 col-sm-12">
                         <div class="nav-logo">
                             <a href="">
                                 <img src="assets/img/logo-transparent-nav.png" alt="nav-logo">
                             </a>
                         </div>
                     </div>
-                    <div class="col-7">
+                    <div class="col-lg-7 col-sm-12">
                         <div class="search">
                             <form>
                                 <input type="text" placeholder="What do you need?">
@@ -83,7 +83,7 @@
                             </form>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-lg-3 col-sm-12">
                         <div class="icons">
                             <div class="wishlist">
                                 <a href="">
@@ -96,6 +96,7 @@
                                     <i class="fa-light fa-basket-shopping"></i>
                                     <span>0</span>
                                 </a>
+                                <span class="price">$0</span>
                             </div>
                         </div>
                     </div>
@@ -155,9 +156,51 @@
             </div>
         </section>
 
+        <section id="navbar-menu-wrap">
+            <div class="container">
+                <div class="menu">
+                    <button class="menu-btn">MENU <i class="fa-regular fa-bars"></i></button>
+
+                    <ul>
+                        <li>
+                            <a class="menu-link" href="">Home</a>
+                        </li>
+                        <li>
+                            <a class="menu-link" href="">Shop</a>
+                        </li>
+                        <li>
+                            <a class="menu-link" href="">Blog</a>
+                        </li>
+                        <li>
+                            <a class="menu-link" href="">About</a>
+                        </li>
+                        <li>
+                            <a class="menu-link" href="">Contact</a>
+                        </li>
+                        <li class="menu-pages">
+                            <span>
+                                Pages
+                                <i class="fa-regular fa-chevron-right"></i>
+                            </span>
+                            <ul class="menu-link-hover">
+                                <li class="hover-list"><a class="hover-list-link" href="">Faq</a></li>
+                                <li class="hover-list"><a class="hover-list-link" href="">Shopping Cart</a></li>
+                                <li class="hover-list"><a class="hover-list-link" href="">Register</a></li>
+                                <li class="hover-list"><a class="hover-list-link" href="">Login</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
     </header>
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/home.js"></script>
 </body>
 
 </html>
