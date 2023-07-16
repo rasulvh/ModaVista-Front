@@ -87,10 +87,10 @@
 #head-up hr {
   margin: 0;
 }
-#head-up i {
+#head-up i:not(.fa-envelope, .fa-phone) {
   transition: all 0.3s;
 }
-#head-up i:hover {
+#head-up i:not(.fa-envelope, .fa-phone):hover {
   color: rgb(231, 171, 60);
 }
 
@@ -151,7 +151,6 @@
 #head-down .icons .wishlist a,
 #head-down .icons .basket a {
   text-decoration: none;
-  color: black;
   position: relative;
   display: inline-block;
   width: 25px;
@@ -161,6 +160,8 @@
 #head-down .icons .basket a i {
   font-size: 25px;
   position: absolute;
+  color: black;
+  transition: all 0.3s;
 }
 #head-down .icons .wishlist a span,
 #head-down .icons .basket a span {
@@ -176,4 +177,150 @@
   align-items: center;
   font-size: 12px;
   color: white;
+}
+#head-down .icons .wishlist a:hover i,
+#head-down .icons .basket a:hover i {
+  color: orange;
+}
+
+#navbar {
+  height: 52px;
+  background-color: rgb(37, 37, 37);
+}
+#navbar .nav-categories {
+  height: 52px;
+  width: 268px;
+  background-color: rgb(59, 59, 59);
+  position: relative;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+#navbar .nav-categories i {
+  color: white;
+}
+#navbar .nav-categories .all {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+#navbar .nav-categories .fa-bars {
+  font-size: 19px;
+  width: 19px;
+  height: 19px;
+}
+#navbar .nav-categories .fa-chevron-down {
+  font-size: 13px;
+}
+#navbar .nav-categories .category-hover {
+  position: absolute;
+  top: 52px;
+  left: 0;
+  z-index: 50;
+  transform: translateY(15px);
+  width: 268px;
+  padding-left: 35px;
+  opacity: 0;
+  visibility: hidden;
+  list-style: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all 0.2s;
+}
+#navbar .nav-categories .category-hover li {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#navbar .nav-categories .category-hover li a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s;
+}
+#navbar .nav-categories .category-hover li a:hover {
+  color: rgb(231, 171, 60);
+}
+#navbar .nav-categories:hover .category-hover {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+#navbar .nav-links {
+  display: inline-block;
+}
+#navbar .nav-links ul:not(.nav-link-hover) {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  align-items: center;
+}
+#navbar .nav-links ul:not(.nav-link-hover) li:not(.hover-list) {
+  width: 152px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.3s;
+}
+#navbar .nav-links ul:not(.nav-link-hover) li:not(.hover-list) a.nav-link,
+#navbar .nav-links ul:not(.nav-link-hover) li:not(.hover-list) span {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#navbar .nav-links ul:not(.nav-link-hover) li:not(.hover-list) span {
+  cursor: pointer;
+}
+#navbar .nav-links ul:not(.nav-link-hover) li:not(.hover-list) .vertical-line {
+  position: absolute;
+  width: 2px;
+  height: 52px;
+  right: 0;
+  background-color: grey;
+  opacity: 0.2;
+}
+#navbar .nav-links ul:not(.nav-link-hover) li:not(.hover-list):hover {
+  background-color: rgb(231, 171, 60);
+}
+#navbar .nav-links ul:not(.nav-link-hover) .nav-pages {
+  position: relative;
+}
+#navbar .nav-links ul:not(.nav-link-hover) .nav-pages ul {
+  position: absolute;
+  top: 52px;
+  right: 0;
+  width: 180px;
+  list-style: none;
+  padding-left: 20px;
+  background-color: rgb(37, 37, 37);
+  transform: translateY(15px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s;
+}
+#navbar .nav-links ul:not(.nav-link-hover) .nav-pages ul li {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#navbar .nav-links ul:not(.nav-link-hover) .nav-pages ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s;
+  font-weight: 600;
+  font-size: 15px;
+}
+#navbar .nav-links ul:not(.nav-link-hover) .nav-pages ul li a:hover {
+  color: rgb(231, 171, 60);
+}
+#navbar .nav-links ul:not(.nav-link-hover) .nav-pages:hover ul {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }/*# sourceMappingURL=home.css.map */

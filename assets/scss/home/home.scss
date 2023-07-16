@@ -104,7 +104,7 @@
         margin: 0;
     }
 
-    i {
+    i:not(.fa-envelope, .fa-phone) {
         transition: all 0.3s;
 
         &:hover {
@@ -175,7 +175,6 @@
 
             a {
                 text-decoration: none;
-                color: black;
                 position: relative;
                 display: inline-block;
                 width: 25px;
@@ -184,6 +183,8 @@
                 i {
                     font-size: 25px;
                     position: absolute;
+                    color: black;
+                    transition: all 0.3s;
                 }
 
                 span {
@@ -199,6 +200,175 @@
                     align-items: center;
                     font-size: 12px;
                     color: white;
+                }
+
+                &:hover i {
+                    color: orange;
+                }
+            }
+        }
+    }
+}
+
+#navbar {
+    height: 52px;
+    background-color: rgb(37, 37, 37);
+
+    .nav-categories {
+        height: 52px;
+        width: 268px;
+        background-color: rgb(59, 59, 59);
+        position: relative;
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+
+        i {
+            color: white;
+        }
+
+        .all {
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .fa-bars {
+            font-size: 19px;
+            width: 19px;
+            height: 19px;
+        }
+
+        .fa-chevron-down {
+            font-size: 13px;
+        }
+
+        .category-hover {
+            position: absolute;
+            top: 52px;
+            left: 0;
+            z-index: 50;
+            transform: translateY(15px);
+            width: 268px;
+            padding-left: 35px;
+            opacity: 0;
+            visibility: hidden;
+            list-style: none;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            transition: all 0.2s;
+
+            li {
+                margin-top: 15px;
+                margin-bottom: 15px;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    transition: all 0.3s;
+
+                    &:hover {
+                        color: rgb(231, 171, 60);
+                    }
+                }
+            }
+        }
+
+        &:hover .category-hover {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    }
+
+    .nav-links {
+        display: inline-block;
+
+        ul:not(.nav-link-hover) {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            align-items: center;
+
+            li:not(.hover-list) {
+                width: 152px;
+                height: 52px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                transition: all 0.3s;
+
+                a.nav-link,
+                span {
+                    text-decoration: none;
+                    color: white;
+                    font-weight: 600;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                span {
+                    cursor: pointer;
+                }
+
+                .vertical-line {
+                    position: absolute;
+                    width: 2px;
+                    height: 52px;
+                    right: 0;
+                    background-color: grey;
+                    opacity: 0.2;
+                }
+
+                &:hover {
+                    background-color: rgb(231, 171, 60);
+                }
+            }
+
+            .nav-pages {
+                position: relative;
+
+                ul {
+                    position: absolute;
+                    top: 52px;
+                    right: 0;
+                    width: 180px;
+                    list-style: none;
+                    padding-left: 20px;
+                    background-color: rgb(37, 37, 37);
+                    transform: translateY(15px);
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all 0.2s;
+
+                    li {
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            transition: all 0.3s;
+                            font-weight: 600;
+                            font-size: 15px;
+
+                            &:hover {
+                                color: rgb(231, 171, 60);
+                            }
+                        }
+                    }
+                }
+
+                &:hover ul {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateY(0);
                 }
             }
         }
