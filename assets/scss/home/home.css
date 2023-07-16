@@ -232,6 +232,7 @@
   list-style: none;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: all 0.2s;
+  background-color: white;
 }
 #navbar .nav-categories .category-hover li {
   margin-top: 15px;
@@ -303,6 +304,7 @@
   top: 52px;
   right: 0;
   width: 180px;
+  z-index: 50;
   list-style: none;
   padding-left: 20px;
   background-color: rgb(37, 37, 37);
@@ -455,4 +457,95 @@
     margin-right: 10px;
     width: 25px;
   }
+}
+#slider .slider-box {
+  position: relative;
+}
+#slider .slider-box i {
+  position: absolute;
+  z-index: 5;
+  font-size: 30px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+#slider .slider-box i:hover {
+  color: rgb(231, 171, 60);
+}
+#slider .slider-box i.fa-chevron-left {
+  left: 30px;
+  top: 347px;
+}
+#slider .slider-box i.fa-chevron-right {
+  right: 30px;
+  top: 347px;
+}
+#slider .slider-box .item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 725px;
+  background-position: top center;
+}
+#slider .slider-box .item .text {
+  height: 725px;
+  width: 500px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#slider .slider-box .item .text span {
+  font-weight: 600;
+  font-size: 15px;
+  color: rgb(231, 171, 60);
+}
+#slider .slider-box .item .text h1 {
+  font-size: 60px;
+}
+#slider .slider-box .item .text p {
+  opacity: 0.7;
+}
+#slider .slider-box .item .text a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(231, 171, 60);
+  width: 140px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+#slider .slider-box .item .text a:hover {
+  background-color: rgb(228, 156, 23);
+}
+#slider .slider-box .item .sale {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgb(231, 171, 60);
+  outline: dashed white;
+  outline-offset: -7px;
+  position: absolute;
+  top: 150px;
+  left: 70px;
+}
+#slider .slider-box .item .sale h2 {
+  color: white;
+  font-size: 35px;
+  margin: 0;
+}
+#slider .slider-box .item .sale p {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0;
+}
+#slider .slider-box .owl-dots {
+  display: none;
 }/*# sourceMappingURL=home.css.map */

@@ -269,6 +269,7 @@
             list-style: none;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             transition: all 0.2s;
+            background-color: white;
 
             li {
                 margin-top: 15px;
@@ -351,6 +352,7 @@
                     top: 52px;
                     right: 0;
                     width: 180px;
+                    z-index: 50;
                     list-style: none;
                     padding-left: 20px;
                     background-color: rgb(37, 37, 37);
@@ -535,5 +537,117 @@
     #head-down .icons .wishlist {
         margin-right: 10px;
         width: 25px;
+    }
+}
+
+//Main
+
+#slider {
+
+    .slider-box {
+        position: relative;
+
+        i {
+            position: absolute;
+            z-index: 5;
+            font-size: 30px;
+            transition: all 0.3s;
+            cursor: pointer;
+
+            &:hover {
+                color: rgb(231, 171, 60);
+            }
+        }
+
+        i.fa-chevron-left {
+            left: 30px;
+            top: 347px;
+        }
+
+        i.fa-chevron-right {
+            right: 30px;
+            top: 347px;
+        }
+
+        .item {
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 725px;
+            background-position: top center;
+
+            .text {
+                height: 725px;
+                width: 500px;
+                display: inline-flex;
+                flex-direction: column;
+                justify-content: center;
+
+                span {
+                    font-weight: 600;
+                    font-size: 15px;
+                    color: rgb(231, 171, 60);
+                }
+
+                h1 {
+                    font-size: 60px;
+                }
+
+                p {
+                    opacity: 0.7;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    background-color: rgb(231, 171, 60);
+                    width: 140px;
+                    height: 45px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 14px;
+                    font-weight: 600;
+                    transition: all 0.3s;
+
+                    &:hover {
+                        background-color: rgb(228, 156, 23);
+                    }
+                }
+            }
+
+            .sale {
+                display: inline-flex;
+                flex-direction: column;
+                align-items: center;
+                height: 150px;
+                width: 150px;
+                justify-content: center;
+                border-radius: 50%;
+                background-color: rgb(231, 171, 60);
+                outline: dashed white;
+                outline-offset: -7px;
+                position: absolute;
+                top: 150px;
+                left: 70px;
+
+                h2 {
+                    color: white;
+                    font-size: 35px;
+                    margin: 0;
+                }
+
+                p {
+                    color: white;
+                    font-size: 25px;
+                    font-weight: 600;
+                    margin: 0;
+                }
+            }
+        }
+
+        .owl-dots {
+            display: none;
+        }
     }
 }
