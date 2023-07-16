@@ -32,7 +32,7 @@ $(document).ready(function () {
         $('.item .text h1').removeClass('animate__animated animate__fadeInUp');
         $('.item .text p').removeClass('animate__animated animate__fadeInUp');
         $('.item .text a').removeClass('animate__animated animate__fadeInUp');
-        $('.item .sale').removeClass('animate__animated animate__rotateInDownRight');
+        $('.item .sale').removeClass('animate__animated animate__rotateIn');
 
         // Select the current slide's text element and add the animation classes
         var currentSlide = event.item.index;
@@ -40,7 +40,7 @@ $(document).ready(function () {
         $('.item .text').eq(currentSlide).find('p').addClass('animate__animated animate__fadeInUp');
         $('.item .text').eq(currentSlide).find('span').addClass('animate__animated animate__fadeInUp');
         $('.item .text').eq(currentSlide).find('a').addClass('animate__animated animate__fadeInUp');
-        $('.item').eq(currentSlide).find('.sale').addClass('animate__animated animate__rotateInDownRight');
+        $('.item').eq(currentSlide).find('.sale').addClass('animate__animated animate__rotateIn');
     });
 
     var owl = $('.owl-carousel');

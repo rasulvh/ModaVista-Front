@@ -548,4 +548,41 @@
 }
 #slider .slider-box .owl-dots {
   display: none;
+}
+
+#banner .single-banner {
+  position: relative;
+  height: 233.53px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#banner .single-banner .text {
+  position: absolute;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+#banner .single-banner .text p {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+#banner .single-banner .outline {
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  scale: 0;
+  transition: all 0.3s;
+}
+#banner .single-banner:hover .outline {
+  scale: 1;
 }/*# sourceMappingURL=home.css.map */
