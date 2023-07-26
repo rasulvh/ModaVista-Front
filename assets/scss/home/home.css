@@ -863,4 +863,271 @@
   opacity: 0.7;
   font-size: 17px;
   margin-bottom: 3px;
+}
+#deal-of-week .left:not(span.left) .button {
+  margin-top: 50px;
+}
+#deal-of-week .left:not(span.left) .button a {
+  text-decoration: none;
+  display: flex;
+  width: 150px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(231, 171, 60);
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+#deal-of-week .left:not(span.left) .button a:hover {
+  background-color: rgb(228, 156, 23);
+}
+
+#men-banner .banner-image {
+  background-image: url(./../../img/home/man-large.jpg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  width: 100%;
+  height: 620px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#men-banner .banner-image h1 {
+  color: white;
+  font-size: 40px;
+}
+#men-banner .banner-image a {
+  text-decoration: none;
+  color: white;
+  border-bottom: 3px solid white;
+  font-size: 17px;
+  transition: all 0.3s;
+}
+#men-banner .banner-image a:hover {
+  color: rgb(139, 46, 46);
+  border-bottom: 3px solid rgb(139, 46, 46);
+}
+#men-banner .head {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+#men-banner .head p {
+  font-size: 20px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+#men-banner .head .active {
+  border-bottom: 2px solid rgb(0, 0, 0);
+  opacity: 1;
+}
+#men-banner .head .de-active {
+  opacity: 0.6;
+}
+#men-banner .datas {
+  position: relative;
+}
+#men-banner .datas .product-card {
+  display: inline-block;
+}
+#men-banner .datas .product-card .image {
+  width: 282px;
+  height: 344px;
+  position: relative;
+  overflow: hidden;
+}
+#men-banner .datas .product-card .image img {
+  width: 282px;
+  height: 344px;
+  position: absolute;
+}
+#men-banner .datas .product-card .image .fa-heart {
+  position: absolute;
+  z-index: 10;
+  right: 20px;
+  top: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transform: translateY(-45px);
+  transition: all 0.3s;
+}
+#men-banner .datas .product-card .image .fa-heart:hover {
+  color: rgb(228, 156, 23);
+}
+#men-banner .datas .product-card .image .bottom {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  width: 100%;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  transform: translateY(52px);
+  transition: all 0.3s;
+}
+#men-banner .datas .product-card .image .bottom .fa-basket-shopping {
+  width: 39px;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(231, 171, 60);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#men-banner .datas .product-card .image .bottom .fa-basket-shopping:hover {
+  background-color: rgb(228, 156, 23);
+}
+#men-banner .datas .product-card .image .bottom .view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  background-color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#men-banner .datas .product-card .image .bottom .view a {
+  text-decoration: none;
+  color: black;
+}
+#men-banner .datas .product-card .image .bottom .view span {
+  font-weight: 600;
+  transition: all 0.3s;
+}
+#men-banner .datas .product-card .image .bottom .view i {
+  font-size: 15px;
+  width: 15px;
+  margin-left: 3px;
+  transition: all 0.3s;
+}
+#men-banner .datas .product-card .image .bottom .view:hover span {
+  color: rgb(228, 156, 23);
+}
+#men-banner .datas .product-card .image .bottom .view:hover i {
+  color: rgb(228, 156, 23);
+}
+#men-banner .datas .product-card .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#men-banner .datas .product-card .text p {
+  margin: 0;
+}
+#men-banner .datas .product-card .text .category-name {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0.4;
+}
+#men-banner .datas .product-card .text a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  transition: all 0.3s;
+}
+#men-banner .datas .product-card .text a:hover {
+  color: rgb(228, 156, 23);
+}
+#men-banner .datas .product-card .text .price {
+  font-size: 19px;
+  font-weight: 600;
+  color: rgb(228, 156, 23);
+}
+#men-banner .datas .product-card:hover .fa-heart {
+  transform: translateY(0);
+}
+#men-banner .datas .product-card:hover .bottom {
+  transform: translateY(0);
+}
+#men-banner .datas i:not(.fa-basket-shopping) {
+  position: absolute;
+  z-index: 5;
+  font-size: 30px;
+  opacity: 0.5;
+  top: 185px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#men-banner .datas i:not(.fa-basket-shopping):hover {
+  color: rgb(231, 171, 60);
+  opacity: 1;
+}
+#men-banner .datas .fa-chevron-left {
+  left: -50px;
+}
+#men-banner .datas .fa-chevron-right {
+  right: -50px;
+}
+#men-banner .datas .owl-dots {
+  display: block;
+  margin-top: 30px;
+}
+#men-banner .datas .owl-dots button span {
+  transition: all 0.3s;
+  height: 5px;
+}
+#men-banner .datas .owl-dots button.active span {
+  width: 30px;
+  background-color: black;
+}
+
+#instagram {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+#instagram .photos {
+  display: flex;
+}
+#instagram .photos .photo {
+  height: 320px;
+  width: 253px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#instagram .photos .photo .hover-text {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+#instagram .photos .photo .hover-text a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#instagram .photos .photo .hover-text a i {
+  color: white;
+  font-size: 35px;
+  transition: all 0.3s;
+}
+#instagram .photos .photo .hover-text a span {
+  color: white;
+  transition: all 0.3s;
+}
+#instagram .photos .photo .hover-text a:hover i {
+  color: rgb(228, 156, 23);
+}
+#instagram .photos .photo .hover-text a:hover span {
+  color: rgb(228, 156, 23);
+}
+#instagram .photos .photo:hover .hover-text {
+  opacity: 1;
 }/*# sourceMappingURL=home.css.map */
