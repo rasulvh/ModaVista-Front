@@ -20,7 +20,9 @@ $(document).ready(function () {
     })
 
     //Slider
-    $('.owl-carousel').owlCarousel({
+    var firstSlider = $('#first-slider');
+
+    firstSlider.owlCarousel({
         loop: true,
         margin: 10,
         items: 1,
@@ -43,13 +45,140 @@ $(document).ready(function () {
         $('.item').eq(currentSlide).find('.sale').addClass('animate__animated animate__rotateIn');
     });
 
-    var owl = $('.owl-carousel');
-    owl.owlCarousel();
     $('#slider .fa-chevron-right').click(function () {
-        owl.trigger('next.owl.carousel');
+        firstSlider.trigger('next.owl.carousel');
     })
     $('#slider .fa-chevron-left').click(function () {
-        owl.trigger('prev.owl.carousel', [300]);
+        firstSlider.trigger('prev.owl.carousel', [300]);
+    })
+
+    //Women Clothing Tab Menu
+    $('#women-banner .head p').click(function () {
+        $('#women-banner p.active').addClass('de-active')
+        $('#women-banner p.active').removeClass('active')
+        if ($(this).hasClass('de-active')) {
+            $(this).removeClass('de-active')
+        }
+        $(this).addClass('active')
+
+        let dataId = $(this).attr('data-id')
+
+        $('.datas div.owl-carousel').each(function () {
+            if ($(this).attr('data-id') == dataId) {
+                if ($(this).hasClass('d-none')) {
+                    $(this).removeClass('d-none')
+                }
+            }
+            else {
+                if (!$(this).hasClass('d-none')) {
+                    $(this).addClass('d-none')
+                }
+            }
+        })
+    })
+
+    var womenSlider1 = $('#women-carousel-1');
+
+    if (womenSlider1.children().length > 3) {
+        womenSlider1.owlCarousel({
+            loop: true,
+            margin: 10,
+            items: 3,
+            autoplay: true,
+            autoplayTimeout: 3000,
+        });
+    }
+    else {
+        womenSlider1.owlCarousel({
+            loop: false,
+            margin: 10,
+            items: 3,
+        });
+    }
+
+    $('.datas .fa-chevron-right').click(function () {
+        womenSlider1.trigger('next.owl.carousel');
+    })
+    $('.datas .fa-chevron-left').click(function () {
+        womenSlider1.trigger('prev.owl.carousel', [300]);
+    })
+
+    var womenSlider2 = $('#women-carousel-2');
+
+    if (womenSlider2.children().length > 3) {
+        womenSlider2.owlCarousel({
+            loop: true,
+            margin: 10,
+            items: 3,
+            autoplay: true,
+            autoplayTimeout: 3000,
+        });
+    }
+    else {
+        womenSlider2.owlCarousel({
+            loop: false,
+            margin: 10,
+            items: 3,
+        });
+    }
+
+    $('.datas .fa-chevron-right').click(function () {
+        womenSlider2.trigger('next.owl.carousel');
+    })
+    $('.datas .fa-chevron-left').click(function () {
+        womenSlider2.trigger('prev.owl.carousel', [300]);
+    })
+
+    var womenSlider3 = $('#women-carousel-3');
+
+    if (womenSlider3.children().length > 3) {
+        womenSlider3.owlCarousel({
+            loop: true,
+            margin: 10,
+            items: 3,
+            autoplay: true,
+            autoplayTimeout: 3000,
+        });
+    }
+    else {
+        womenSlider3.owlCarousel({
+            loop: false,
+            margin: 10,
+            items: 3,
+        });
+    }
+
+    $('.datas .fa-chevron-right').click(function () {
+        womenSlider3.trigger('next.owl.carousel');
+    })
+    $('.datas .fa-chevron-left').click(function () {
+        womenSlider3.trigger('prev.owl.carousel', [300]);
+    })
+
+    var womenSlider4 = $('#women-carousel-4');
+
+    if (womenSlider4.children().length > 3) {
+        womenSlider4.owlCarousel({
+            loop: true,
+            margin: 10,
+            items: 3,
+            autoplay: true,
+            autoplayTimeout: 3000,
+        });
+    }
+    else {
+        womenSlider4.owlCarousel({
+            loop: false,
+            margin: 10,
+            items: 3,
+        });
+    }
+
+    $('.datas .fa-chevron-right').click(function () {
+        womenSlider4.trigger('next.owl.carousel');
+    })
+    $('.datas .fa-chevron-left').click(function () {
+        womenSlider4.trigger('prev.owl.carousel', [300]);
     })
 
 })

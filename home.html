@@ -111,15 +111,13 @@
             <div class="container d-flex">
                 <div class="nav-categories">
                     <i class="fa-regular fa-bars"></i>
-                    <span class="all">ALL CATEGORIES</span>
+                    <span class="all">FOR ALL AGES</span>
                     <i class="fa-regular fa-chevron-down"></i>
 
                     <ul class="category-hover">
                         <li><a href="">Men's Clothing</a></li>
                         <li><a href="">Women's Clothing</a></li>
                         <li><a href="">Kid's Clothing</a></li>
-                        <li><a href="">Shoes</a></li>
-                        <li><a href="">Accessories</a></li>
                     </ul>
                 </div>
                 <div class="nav-links">
@@ -204,7 +202,7 @@
         <section id="slider">
             <div class="slider-box">
                 <i class="fa-light fa-chevron-left"></i>
-                <div class="owl-carousel">
+                <div class="owl-carousel" id="first-slider">
                     <div class="item" style="background-image: url(assets/img/home/hero-1.jpg.webp);">
                         <div class="container">
                             <div class="row">
@@ -262,7 +260,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4">
-                        <div class="single-banner" style="background-image: url(assets/img/home/banner-1.jpg.webp);">
+                        <div class="single-banner my-2"
+                            style="background-image: url(assets/img/home/banner-1.jpg.webp);">
                             <div class="text">
                                 <p>Men's</p>
                             </div>
@@ -270,7 +269,8 @@
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="single-banner" style="background-image: url(assets/img/home/banner-2.jpg.webp);">
+                        <div class="single-banner my-2"
+                            style="background-image: url(assets/img/home/banner-2.jpg.webp);">
                             <div class="text">
                                 <p>Women's</p>
                             </div>
@@ -278,7 +278,8 @@
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="single-banner" style="background-image: url(assets/img/home/banner-3.jpg.webp);">
+                        <div class="single-banner my-2"
+                            style="background-image: url(assets/img/home/banner-3.jpg.webp);">
                             <div class="text">
                                 <p>Kid's</p>
                             </div>
@@ -289,9 +290,369 @@
             </div>
         </section>
 
+        <section id="women-banner" class="my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="banner-image">
+                            <h1>Women's</h1>
+                            <a href="">Discover More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 offset-lg-1">
+                        <div class="head">
+                            <p data-id="1" class="active">Clothings</p>
+                            <p data-id="2" class="de-active">Handbags</p>
+                            <p data-id="3" class="de-active">Shoes</p>
+                            <p data-id="4" class="de-active">Accessories</p>
+                        </div>
+                        <div class="datas mt-3">
+                            <i class="fa-light fa-chevron-left"></i>
+                            <div id="women-carousel-1" data-id="1" class="owl-carousel owl-theme">
+                                <div data-id="1" class="product-card">
+                                    <div class="image">
+                                        <img src="assets/img/home/products/women-1.jpg.webp" alt="women-1">
+                                        <i class="fa-light fa-heart"></i>
+                                        <i class="fa-solid fa-heart d-none"></i><!-- Choosen heart in orange color -->
+                                        <div class="bottom">
+                                            <i class="fa-light fa-basket-shopping"></i>
+                                            <div class="view">
+                                                <a href="">
+                                                    <span>View Item</span>
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <p class="category-name">COAT</p>
+                                        <a href="">Tab 1 - Item 1</a>
+                                        <p class="price">$13.00</p>
+                                    </div>
+                                </div>
+                                <div data-id="2" class="product-card">
+                                    <div class="image">
+                                        <img src="assets/img/home/products/women-2.jpg.webp" alt="women-1">
+                                        <i class="fa-light fa-heart"></i>
+                                        <i class="fa-solid fa-heart d-none"></i><!-- Choosen heart in orange color -->
+                                        <div class="bottom">
+                                            <i class="fa-light fa-basket-shopping"></i>
+                                            <div class="view">
+                                                <a href="">
+                                                    <span>View Item</span>
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <p class="category-name">COAT</p>
+                                        <a href="">Tab 1 - Item 2</a>
+                                        <p class="price">$13.00</p>
+                                    </div>
+                                </div>
+                                <div data-id="3" class="product-card">
+                                    <div class="image">
+                                        <img src="assets/img/home/products/women-3.jpg.webp" alt="women-1">
+                                        <i class="fa-light fa-heart"></i>
+                                        <i class="fa-solid fa-heart d-none"></i><!-- Choosen heart in orange color -->
+                                        <div class="bottom">
+                                            <i class="fa-light fa-basket-shopping"></i>
+                                            <div class="view">
+                                                <a href="">
+                                                    <span>View Item</span>
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <p class="category-name">COAT</p>
+                                        <a href="">Tab 1 - Item 3</a>
+                                        <p class="price">$13.00</p>
+                                    </div>
+                                </div>
+                                <div data-id="4" class="product-card">
+                                    <div class="image">
+                                        <img src="assets/img/home/products/women-4.jpg.webp" alt="women-1">
+                                        <i class="fa-light fa-heart"></i>
+                                        <i class="fa-solid fa-heart d-none"></i><!-- Choosen heart in orange color -->
+                                        <div class="bottom">
+                                            <i class="fa-light fa-basket-shopping"></i>
+                                            <div class="view">
+                                                <a href="">
+                                                    <span>View Item</span>
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <p class="category-name">BAG</p>
+                                        <a href="">Tab 1 - Item 4</a>
+                                        <p class="price">$42.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="women-carousel-2" data-id="2" class="owl-carousel owl-theme d-none">
+                                <div data-id="1" class="product-card">
+                                    <div class="image">
+                                        <img src="assets/img/home/products/women-1.jpg.webp" alt="women-1">
+                                        <i class="fa-light fa-heart"></i>
+                                        <i class="fa-solid fa-heart d-none"></i><!-- Choosen heart in orange color -->
+                                        <div class="bottom">
+                                            <i class="fa-light fa-basket-shopping"></i>
+                                            <div class="view">
+                                                <a href="">
+                                                    <span>View Item</span>
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <p class="category-name">COAT</p>
+                                        <a href="">Tab 2 - Item 1</a>
+                                        <p class="price">$13.00</p>
+                                    </div>
+                                </div>
+                                <div data-id="2" class="product-card">
+                                    <div class="image">
+                                        <img src="assets/img/home/products/women-2.jpg.webp" alt="women-1">
+                                        <i class="fa-light fa-heart"></i>
+                                        <i class="fa-solid fa-heart d-none"></i><!-- Choosen heart in orange color -->
+                                        <div class="bottom">
+                                            <i class="fa-light fa-basket-shopping"></i>
+                                            <div class="view">
+                                                <a href="">
+                                                    <span>View Item</span>
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <p class="category-name">COAT</p>
+                                        <a href="">Tab 2 - Item 2</a>
+                                        <p class="price">$13.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="women-carousel-3" data-id="3" class="owl-carousel owl-theme d-none">
+                                <div data-id="1" class="product-card">
+                                    <div class="image">
+                                        <img src="assets/img/home/products/women-1.jpg.webp" alt="women-1">
+                                        <i class="fa-light fa-heart"></i>
+                                        <i class="fa-solid fa-heart d-none"></i><!-- Choosen heart in orange color -->
+                                        <div class="bottom">
+                                            <i class="fa-light fa-basket-shopping"></i>
+                                            <div class="view">
+                                                <a href="">
+                                                    <span>View Item</span>
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <p class="category-name">COAT</p>
+                                        <a href="">Tab 3 - Item 1</a>
+                                        <p class="price">$13.00</p>
+                                    </div>
+                                </div>
+                                <div data-id="2" class="product-card">
+                                    <div class="image">
+                                        <img src="assets/img/home/products/women-2.jpg.webp" alt="women-1">
+                                        <i class="fa-light fa-heart"></i>
+                                        <i class="fa-solid fa-heart d-none"></i><!-- Choosen heart in orange color -->
+                                        <div class="bottom">
+                                            <i class="fa-light fa-basket-shopping"></i>
+                                            <div class="view">
+                                                <a href="">
+                                                    <span>View Item</span>
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <p class="category-name">COAT</p>
+                                        <a href="">Tab 3 - Item 2</a>
+                                        <p class="price">$13.00</p>
+                                    </div>
+                                </div>
+                                <div data-id="3" class="product-card">
+                                    <div class="image">
+                                        <img src="assets/img/home/products/women-3.jpg.webp" alt="women-1">
+                                        <i class="fa-light fa-heart"></i>
+                                        <i class="fa-solid fa-heart d-none"></i><!-- Choosen heart in orange color -->
+                                        <div class="bottom">
+                                            <i class="fa-light fa-basket-shopping"></i>
+                                            <div class="view">
+                                                <a href="">
+                                                    <span>View Item</span>
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <p class="category-name">COAT</p>
+                                        <a href="">Tab 3 - Item 3</a>
+                                        <p class="price">$13.00</p>
+                                    </div>
+                                </div>
+                                <div data-id="4" class="product-card">
+                                    <div class="image">
+                                        <img src="assets/img/home/products/women-4.jpg.webp" alt="women-1">
+                                        <i class="fa-light fa-heart"></i>
+                                        <i class="fa-solid fa-heart d-none"></i><!-- Choosen heart in orange color -->
+                                        <div class="bottom">
+                                            <i class="fa-light fa-basket-shopping"></i>
+                                            <div class="view">
+                                                <a href="">
+                                                    <span>View Item</span>
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <p class="category-name">BAG</p>
+                                        <a href="">Tab 3 - Item 4</a>
+                                        <p class="price">$42.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="women-carousel-4" data-id="4" class="owl-carousel owl-theme d-none">
+                                <div data-id="1" class="product-card">
+                                    <div class="image">
+                                        <img src="assets/img/home/products/women-1.jpg.webp" alt="women-1">
+                                        <i class="fa-light fa-heart"></i>
+                                        <i class="fa-solid fa-heart d-none"></i><!-- Choosen heart in orange color -->
+                                        <div class="bottom">
+                                            <i class="fa-light fa-basket-shopping"></i>
+                                            <div class="view">
+                                                <a href="">
+                                                    <span>View Item</span>
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <p class="category-name">COAT</p>
+                                        <a href="">Tab 4 - Item 1</a>
+                                        <p class="price">$13.00</p>
+                                    </div>
+                                </div>
+                                <div data-id="2" class="product-card">
+                                    <div class="image">
+                                        <img src="assets/img/home/products/women-2.jpg.webp" alt="women-1">
+                                        <i class="fa-light fa-heart"></i>
+                                        <i class="fa-solid fa-heart d-none"></i><!-- Choosen heart in orange color -->
+                                        <div class="bottom">
+                                            <i class="fa-light fa-basket-shopping"></i>
+                                            <div class="view">
+                                                <a href="">
+                                                    <span>View Item</span>
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <p class="category-name">COAT</p>
+                                        <a href="">Tab 4 - Item 2</a>
+                                        <p class="price">$13.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <i class="fa-light fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="deal-of-week">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="left">
+                            <div class="text">
+                                <h2>Deal Of The Week</h2>
+                                <hr>
+                                <p class="desc">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Non laborum eligendi iusto
+                                    quo aut id.
+                                </p>
+                                <p class="price">
+                                    <span class="left">$35.00</span>
+                                    <span class="right">/ HanBag</span>
+                                </p>
+                            </div>
+                            <div class="time">
+                                <div class="day">
+                                    <span></span>
+                                    <p>DAYS</p>
+                                </div>
+                                <div class="hour">
+                                    <span></span>
+                                    <p>HOURS</p>
+                                </div>
+                                <div class="min">
+                                    <span></span>
+                                    <p>MINS</p>
+                                </div>
+                                <div class="sec">
+                                    <span></span>
+                                    <p>SECS</p>
+                                </div>
+                            </div>
+                            <div class="button"></div>
+                        </div>
+                    </div>
+                    <div class="col-6"></div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
+    <script>
+        //Time Coutdown
+        var countDownDate = new Date("Aug 25, 2023 23:59:59").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            $(".time .day span").text(days)
+            $(".time .hour span").text(hours)
+            $(".time .min span").text(minutes)
+            $(".time .sec span").text(seconds)
+
+            // If the count down is over, write some text 
+            // if (distance < 0) {
+            //     clearInterval(x);
+            //     document.getElementById("demo").innerHTML = "EXPIRED";
+            // }
+        });
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
         integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
