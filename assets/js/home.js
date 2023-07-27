@@ -86,6 +86,17 @@ $(document).ready(function () {
             items: 3,
             autoplay: true,
             autoplayTimeout: 3000,
+            responsive: {
+                600: {
+                    items: 1,
+                },
+                768: {
+                    items: 2,
+                },
+                1200: {
+                    items: 3,
+                }
+            }
         });
     }
     else {
@@ -93,6 +104,17 @@ $(document).ready(function () {
             loop: false,
             margin: 10,
             items: 3,
+            responsive: {
+                600: {
+                    items: 1,
+                },
+                768: {
+                    items: 2,
+                },
+                1200: {
+                    items: 3,
+                }
+            }
         });
     }
 
@@ -112,6 +134,17 @@ $(document).ready(function () {
             items: 3,
             autoplay: true,
             autoplayTimeout: 3000,
+            responsive: {
+                600: {
+                    items: 1,
+                },
+                768: {
+                    items: 2,
+                },
+                1200: {
+                    items: 3,
+                }
+            }
         });
     }
     else {
@@ -119,6 +152,18 @@ $(document).ready(function () {
             loop: false,
             margin: 10,
             items: 3,
+            responsive: {
+                600: {
+                    items: 1,
+                    loop: true,
+                },
+                768: {
+                    items: 2,
+                },
+                1200: {
+                    items: 3,
+                }
+            }
         });
     }
 
@@ -138,6 +183,17 @@ $(document).ready(function () {
             items: 3,
             autoplay: true,
             autoplayTimeout: 3000,
+            responsive: {
+                600: {
+                    items: 1,
+                },
+                768: {
+                    items: 2,
+                },
+                1200: {
+                    items: 3,
+                }
+            }
         });
     }
     else {
@@ -145,6 +201,18 @@ $(document).ready(function () {
             loop: false,
             margin: 10,
             items: 3,
+            responsive: {
+                600: {
+                    items: 1,
+                    loop: true,
+                },
+                768: {
+                    items: 2,
+                },
+                1200: {
+                    items: 3,
+                }
+            }
         });
     }
 
@@ -164,6 +232,17 @@ $(document).ready(function () {
             items: 3,
             autoplay: true,
             autoplayTimeout: 3000,
+            responsive: {
+                600: {
+                    items: 1,
+                },
+                768: {
+                    items: 2,
+                },
+                1200: {
+                    items: 3,
+                }
+            }
         });
     }
     else {
@@ -171,6 +250,18 @@ $(document).ready(function () {
             loop: false,
             margin: 10,
             items: 3,
+            responsive: {
+                600: {
+                    items: 1,
+                    loop: true,
+                },
+                768: {
+                    items: 2,
+                },
+                1200: {
+                    items: 3,
+                }
+            }
         });
     }
 
@@ -215,6 +306,17 @@ $(document).ready(function () {
             items: 3,
             autoplay: true,
             autoplayTimeout: 3000,
+            responsive: {
+                600: {
+                    items: 1,
+                },
+                768: {
+                    items: 2,
+                },
+                1200: {
+                    items: 3,
+                }
+            }
         });
     }
     else {
@@ -222,6 +324,17 @@ $(document).ready(function () {
             loop: false,
             margin: 10,
             items: 3,
+            responsive: {
+                600: {
+                    items: 1,
+                },
+                768: {
+                    items: 2,
+                },
+                1200: {
+                    items: 3,
+                }
+            }
         });
     }
 
@@ -241,6 +354,17 @@ $(document).ready(function () {
             items: 3,
             autoplay: true,
             autoplayTimeout: 3000,
+            responsive: {
+                600: {
+                    items: 1,
+                },
+                768: {
+                    items: 2,
+                },
+                1200: {
+                    items: 3,
+                }
+            }
         });
     }
     else {
@@ -248,6 +372,17 @@ $(document).ready(function () {
             loop: false,
             margin: 10,
             items: 3,
+            responsive: {
+                600: {
+                    items: 1,
+                },
+                768: {
+                    items: 2,
+                },
+                1200: {
+                    items: 3,
+                }
+            }
         });
     }
 
@@ -267,6 +402,17 @@ $(document).ready(function () {
             items: 3,
             autoplay: true,
             autoplayTimeout: 3000,
+            responsive: {
+                600: {
+                    items: 1,
+                },
+                768: {
+                    items: 2,
+                },
+                1200: {
+                    items: 3,
+                }
+            }
         });
     }
     else {
@@ -274,6 +420,17 @@ $(document).ready(function () {
             loop: false,
             margin: 10,
             items: 3,
+            responsive: {
+                600: {
+                    items: 1,
+                },
+                768: {
+                    items: 2,
+                },
+                1200: {
+                    items: 3,
+                }
+            }
         });
     }
 
@@ -293,6 +450,17 @@ $(document).ready(function () {
             items: 3,
             autoplay: true,
             autoplayTimeout: 3000,
+            responsive: {
+                600: {
+                    items: 1,
+                },
+                768: {
+                    items: 2,
+                },
+                1200: {
+                    items: 3,
+                }
+            }
         });
     }
     else {
@@ -300,6 +468,17 @@ $(document).ready(function () {
             loop: false,
             margin: 10,
             items: 3,
+            responsive: {
+                600: {
+                    items: 1,
+                },
+                768: {
+                    items: 2,
+                },
+                1200: {
+                    items: 3,
+                }
+            }
         });
     }
 
@@ -308,6 +487,27 @@ $(document).ready(function () {
     })
     $('#men-banner .datas .fa-chevron-left').click(function () {
         menSlider4.trigger('prev.owl.carousel', [300]);
+    })
+
+    //Firm Logo Carousel
+    var firmLogoSlider = $('#firm-logo-carousel');
+
+    firmLogoSlider.owlCarousel({
+        loop: false,
+        margin: 10,
+        items: 5,
+        dots: false,
+        responsive: {
+            600: {
+                items: 1,
+            },
+            768: {
+                items: 3,
+            },
+            1200: {
+                items: 5,
+            }
+        }
     })
 
 })
