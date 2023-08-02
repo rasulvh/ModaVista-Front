@@ -1264,29 +1264,28 @@
     border-right: 1px solid rgba(0, 0, 0, 0.1) !important;
   }
 }
-#firm-logo {
+footer {
+  background-color: rgb(25, 25, 25);
+}
+footer #firm-logo {
   background-color: rgb(48, 48, 48);
   height: 121px;
+  margin-bottom: 50px;
 }
-#firm-logo .item {
+footer #firm-logo .item {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 121px;
 }
-#firm-logo .item .logo {
+footer #firm-logo .item .logo {
   height: 38px;
   width: 159px;
   display: inline-block;
 }
-#firm-logo .item .logo img {
+footer #firm-logo .item .logo img {
   width: 100%;
   height: 100%;
-}
-
-footer {
-  background-color: rgb(25, 25, 25);
-  padding-top: 75px;
 }
 footer #footer-up .footer-left .logo {
   height: 60px;
