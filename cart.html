@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="assets/lib/owlcarousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/lib/owlcarousel/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/scss/account/account.css">
-    <title>Login - ModaVista</title>
+    <link rel="stylesheet" href="assets/scss/cart/cart.css">
+    <title>Shopping Cart - ModaVista</title>
 </head>
 
 <body>
@@ -206,40 +206,82 @@
                         Home
                     </a>
                     <i class="fa-light fa-chevron-right"></i>
-                    <span>Login</span>
+                    <a href="shop.html">
+                        Shop
+                    </a>
+                    <i class="fa-light fa-chevron-right"></i>
+                    <span>Shopping Cart</span>
                 </div>
                 <hr>
             </div>
         </section>
 
-        <section id="form">
+        <section id="basket">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 offset-lg-3">
-                        <div class="register-form">
-                            <h2>Login</h2>
-                            <form>
-                                <div class="input">
-                                    <label for="username-email">Username or email address *</label>
-                                    <input type="text" id="username-email">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="img"><span>Image</span></th>
+                            <th class="name"><span>Name</span></th>
+                            <th class="price"><span>Price</span></th>
+                            <th class="quantity"><span>Quantity</span></th>
+                            <th class="total-price"><span>Total</span></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-id="1">
+                            <td class="img-box">
+                                <img src="assets/img/home/products/man-1.jpg.webp" alt="">
+                            </td>
+                            <td><span class="item-name">Item 1</span></td>
+                            <td><span class="item-price">$23.00</span></td>
+                            <td>
+                                <div class="quantity-box">
+                                    <span class="minus">-</span>
+                                    <input min="1" type="number" value="1" disabled>
+                                    <span class="plus">+</span>
                                 </div>
-                                <div class="input">
-                                    <label for="pass">Password *</label>
-                                    <input type="password" id="username">
+                            </td>
+                            <td><span class="item-price total-price">$23.00</span></td>
+                            <td>
+                                <i class="fa-light fa-x"></i>
+                            </td>
+                        </tr>
+                        <tr data-id="2">
+                            <td class="img-box">
+                                <img src="assets/img/home/products/man-2.jpg.webp" alt="">
+                            </td>
+                            <td><span class="item-name">Item 2</span></td>
+                            <td><span class="item-price">$20.00</span></td>
+                            <td>
+                                <div class="quantity-box">
+                                    <span class="minus">-</span>
+                                    <input min="1" type="number" value="2" disabled>
+                                    <span class="plus">+</span>
                                 </div>
-                                <button type="submit">LOGIN</button>
-                            </form>
-                            <div class="or-switch">
-                                <a href="">OR REGISTER</a>
-                            </div>
-                        </div>
+                            </td>
+                            <td><span class="item-price total-price">$40.00</span></td>
+                            <td>
+                                <i class="fa-light fa-x"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="basket-total">
+                    <div class="up">
+                        <span class="first">TOTAL</span>
+                        <span class="last">$63.00</span>
+                    </div>
+                    <div class="down">
+                        <p>PROCEED TO CHECKOUT</p>
                     </div>
                 </div>
             </div>
         </section>
 
     </main>
-
 
     <footer>
 
@@ -356,7 +398,7 @@
         integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/lib/owlcarousel/dist/owl.carousel.min.js"></script>
-    <script src="assets/js/account.js"></script>
+    <script src="assets/js/cart.js"></script>
 </body>
 
 </html>
